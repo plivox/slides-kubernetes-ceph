@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Presentation Kubernetes & Ceph</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
+  <link rel="stylesheet" href="plugin/highlight/atelier-heath.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <div class="reveal">
+    <div id="title" class="title"></div>
+    <div class="slides">
+      <section data-background-color="#0E1320">
+
+        <section class="intro" data-background-color="#afdfe3" data-transition="slide"
+          data-background-image="images/background.svg" data-background-repeat="no-repeat"
+          data-background-position="100% 100%" data-background-size="100%">
+        </section>
+
+        <section data-transition="slide" data-background-color="#0E1320">
+          <h2>Céphalopode?</h2>
+          <ul>
+            <li>Du stockage distribué</li>
+            <li>Fonctionne avec du matériel standard</li>
+            <li>Pas de point de défaillance unique</li>
+            <li>Extensible (Scaling horizontal)</li>
+            <li>Open Source</li>
+          </ul>
+          <aside class="notes">
+            RADOS (Reliable Autonomic Distributed Object Store)
+            <br />
+            Sous licence LGPL
+          </aside>
+        </section>
+
+        <section data-transition="slide">
+          <h2>Historique de Ceph</h2>
+          <ul>
+            <li>
+              Initialement créé par Sage Weil
+              <br />
+              (co-fondateur de DreamHost)
+              <br />
+              pour sa <a href="https://ceph.io/en/news/publications/">thèse de doctorat</a>
+            </li>
+            <li>Inktank Storage</li>
+            <li>En 2014, Red Hat rachète Inktank</li>
+          </ul>
+          <aside class="notes">
+            Inktank Storage fournir des services et du support professionnel à
+            Ceph.
+            <br />
+            Red Hat et SUSE vendent des versions commerciales de Ceph sur
+            abonnement.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Qui utilise Ceph?</h2>
+          <ul>
+            <li>
+              <a href="https://www.digitalocean.com/blog/why-we-chose-ceph-to-build-block-storage/">
+                DigitalOcean
+              </a>
+            </li>
+            <li>OVH (Cloud Disk Array)</li>
+            <li>Le CERN</li>
+          </ul>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Architecture de Ceph</h2>
+          <img src="images/schema-ceph.svg" style="width: 80%;">
+          <aside class="notes">
+            - OSDs daemons
+            <br />
+            - Monitor daemons
+            <br />
+            - Placement Group (PGs)
+            <br />
+            - Pools
+          </aside>
+        </section>
+
+        <section>
+          <h2>Object Storage Device (OSD)</h2>
+          <ul>
+            <li>Stockage des données sous <br />forme d'objets</li>
+            <li>Backend BlueStore (FileSystem)</li>
+          </ul>
+          <aside class="notes">
+            - Les clients CEPH communiquent directement avec les OSD plutôt que par l'intermédiaire d'un serveur
+            centralisé
+            <br />
+            - Différents backend de stockage : – FileStore, BlueStore, MemStore
+            <br />
+            - Gain en vitesse écriture X2 sur les disques SATA et plus sur les SSD
+            <br />
+            - Activation de la compression : lz4, snappy, zlib
+            <br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>Placement Group (PG)</h2>
+          <ul>
+            <li>Ils sont composés d'un groupe de daemons OSD</li>
+            <li>Monitorer le placement d’objets</li>
+          </ul>
+          <aside class="notes">
+            – Monitorer le placement d’objets et leurs métadonnées
+            <br />
+            - Vérifier l’interconnexion entre ces OSD (~30s)
+            <br />
+            - La gestion du placement est cher en CPU et en RAM
+            <br />
+            - Irréaliste sans PG lorsque l’on a des millions, voire milliards d’objets
+            <br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>Logical partitions (Pools)</h2>
+          <ul>
+            <li>Partitions logiques pour <br />le stockage des objets</li>
+            <li>Nombre de réplicas</li>
+            <li>Types de disques</li>
+          </ul>
+          <aside class="notes">
+            - Les pools sont des partitions logiques pour le stockage des objets.
+            <br />
+            - Types de disques NVMe, SSD, HDD
+          </aside>
+        </section>
+
+        <section>
+          <img src="images/pool.svg" style="width: 80%;">
+        </section>
+
+        <section>
+          <h2>Haute Disponibilité (Monitor)</h2>
+          <ul>
+            <li>Monitor, OSD, PG, CRUSH et MDS Map</li>
+          </ul>
+          <aside class="notes">
+            - Les clients et OSD dépendent de la connaissance de la topologie du cluster
+            <br />
+            - Celle ci est connue grâce à 5 cartes qui forment la cluster map
+            <br />
+            - CRUSH (Controlled Replication Under Scalable Hashing)
+            <br />
+            - Les clients Ceph et les démons OSD Ceph utilisent tous deux l'algorithme CRUSH pour calculer efficacement
+            les informations sur l'emplacement des objets, au lieu de dépendre d'une table de consultation centrale.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Stockage et Kubernetes</h2>
+          <ul>
+            <li>Pourquoi Ceph ?</li>
+            <li>
+              <a href="https://github.com/ceph/ceph-csi">
+                CSI Ceph Driver
+              </a>
+              <ul>
+                <li>Provisionnement dynamique (PVC)</li>
+                <li>Supporte RBD et CephFS</li>
+              </ul>
+            </li>
+          </ul>
+          <aside class="notes">
+            - Pourquoi Ceph et pas Longhorn ? ()
+            <br />
+            - Container Storage Interface (CSI)
+            <br />
+            - Provisionnement dynamique
+            <br />
+            - PersistentVolume (PV) et PersistentVolumeClaim (PVC)
+          </aside>
+        </section>
+
+        <section>
+          <h2>Kubernetes et Ceph</h2>
+          <img src="images/schema-kubernetes-ceph.svg" style="width: 80%;">
+          <aside class="notes">
+            - Des fonctions de stockage telles que attacher, resizer, driver-registrar et snapshotter
+            <br />
+            - Le stockage comme une ressource dans Kubernetes
+            <br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>Exemple</h2>
+          <pre>
+            <code data-trim data-noescape>
+            ---
+            apiVersion: v1
+            kind: Pod
+            metadata:
+              name: extraordinary-app
+            spec:
+              containers:
+                - name: web-server
+                  image: docker.io/library/nginx:latest
+                  volumeMounts:
+                    - name: mypvc
+                      mountPath: /var/lib/www
+              volumes:
+                - name: mypvc
+                  persistentVolumeClaim:
+                    claimName: csi-cephfs-pvc
+                    readOnly: false
+            </code>
+          </pre>
+          <aside class="notes">
+            - Exemple d'utilisation de CephFS dans un PersistentVolumeClaim
+          </aside>
+        </section>
+
+        <section>
+          <h2>Cas d'utilisation réel</h2>
+          <ul>
+            <li>Cluster Ceph et Kubernetes <br />d'une quinzaine de machines</li>
+            <li>Deux réseaux physiques 10 Gb/s</li>
+            <li>Une Plateforme PaaS pour nos clients</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

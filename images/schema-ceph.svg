@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="912px" height="626px" viewBox="0 0 912 626" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>schema-ceph</title>
+    <g id="Schemas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#0E1320" x="-284" y="-161" width="1499" height="963"></rect>
+        <g id="Group-3" transform="translate(1.000000, 0.500000)">
+            <g id="tiles/blue" transform="translate(126.000000, 164.500000)">
+                <rect id="Rectangle-7" stroke="#29AFFF" fill="#115984" x="0.491735537" y="0.5" width="226" height="101" rx="5"></rect>
+                <g id="Content" transform="translate(-0.008264, 46.900662)">
+                    <path d="M0,0 L225,0 L225,48.9924762 C225,51.7580552 222.75488,54 219.998424,54 L5.00157638,54 C2.23928202,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#1978B1"></path>
+                    <text fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#0A273E">
+                        <tspan x="44.1700806" y="32.5025321">RADOS Gateway</tspan>
+                    </text>
+                </g>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#031522">
+                    <tspan x="60.8676878" y="31.5165563">RADOSGW</tspan>
+                </text>
+            </g>
+            <g id="tiles/blue" transform="translate(405.000000, 164.500000)">
+                <rect id="Rectangle-7" stroke="#29AFFF" fill="#115984" x="0.491735537" y="0.5" width="226" height="101" rx="5"></rect>
+                <g id="Content" transform="translate(-0.008264, 46.900662)">
+                    <path d="M0,0 L225,0 L225,48.9924762 C225,51.7580552 222.75488,54 219.998424,54 L5.00157638,54 C2.23928202,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#1978B1"></path>
+                    <text fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#0A273E">
+                        <tspan x="26.061682" y="32.5025321">RADOS Block Device</tspan>
+                    </text>
+                </g>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#031522">
+                    <tspan x="91.8705198" y="31.5165563">RBD</tspan>
+                </text>
+            </g>
+            <g id="tiles/blue-copy" transform="translate(684.000000, 164.500000)">
+                <rect id="Rectangle-7" stroke="#29AFFF" fill="#115984" x="0.491735537" y="0.5" width="226" height="101" rx="5"></rect>
+                <g id="Content" transform="translate(-0.008264, 46.900662)">
+                    <path d="M0,0 L225,0 L225,48.9924762 C225,51.7580552 222.75488,54 219.998424,54 L5.00157638,54 C2.23928202,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#1978B1"></path>
+                    <text fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#0A273E">
+                        <tspan x="39.8265258" y="32.5025321">Ceph File System</tspan>
+                    </text>
+                </g>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#031522">
+                    <tspan x="72.471301" y="31.5165563">CEPHFS</tspan>
+                </text>
+            </g>
+            <g id="Group-2" transform="translate(60.000000, 438.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy" transform="translate(126.000000, 438.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy-2" transform="translate(192.000000, 437.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy-3" transform="translate(258.000000, 437.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy-4" transform="translate(324.000000, 437.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy-5" transform="translate(390.000000, 437.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2-Copy-6" transform="translate(456.000000, 437.500000)">
+                <g id="Group" transform="translate(-29.500000, 107.500000)">
+                    <g id="tiles/color4/notitle" transform="translate(54.000000, 24.500000) rotate(-90.000000) translate(-54.000000, -24.500000) ">
+                        <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="107" height="48" rx="5"></rect>
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                            <tspan x="13.0082645" y="31.3154785">OSD</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="harddisk" transform="translate(24.000000, 107.500000) rotate(-360.000000) translate(-24.000000, -107.500000) translate(14.000000, 95.000000)" fill="#413C40" fill-rule="nonzero">
+                    <path d="M2.5,0 L17.5,0 C18.8807119,0 20,1.11928813 20,2.5 L20,22.5 C20,23.8807119 18.8807119,25 17.5,25 L2.5,25 C1.11928813,25 0,23.8807119 0,22.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 M10,2.27272727 C5.75165577,2.27272727 2.30769231,5.66450947 2.30769231,9.84848485 C2.30769231,14.0277778 5.75641026,17.4242424 10.1282051,17.4242424 L9,14.6085859 C8.65384615,14.0025253 8.85897436,13.2323232 9.47435897,12.8787879 L10.5769231,12.2474747 C11.1923077,11.9065657 11.974359,12.1085859 12.3333333,12.7146465 L14.7948718,15.770202 C16.5641026,14.3813131 17.6923077,12.2474747 17.6923077,9.84848485 C17.6923077,5.66450947 14.2483442,2.27272727 10,2.27272727 M10.3846154,9.09090909 C11.021867,9.09090909 11.5384615,9.59967642 11.5384615,10.2272727 C11.5384615,10.854869 11.021867,11.3636364 10.3846154,11.3636364 C9.74736375,11.3636364 9.23076923,10.854869 9.23076923,10.2272727 C9.23076923,9.59967642 9.74736375,9.09090909 10.3846154,9.09090909 M3.46153846,20.4545455 C2.82428683,20.4545455 2.30769231,20.9633128 2.30769231,21.5909091 C2.30769231,22.2185054 2.82428683,22.7272727 3.46153846,22.7272727 C4.0987901,22.7272727 4.61538462,22.2185054 4.61538462,21.5909091 C4.61538462,20.9633128 4.0987901,20.4545455 3.46153846,20.4545455 M10,14.248209 L13.0163537,21.969697 L16.1538462,20.134161 L11.0417929,13.6363636 L10,14.248209 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(-11.500000, 29.000000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(35.500000, 6.500000) rotate(-270.000000) translate(-35.500000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="69.8257576" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="67.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="tiles/color5">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#486878" x="0.491735537" y="0.5" width="352" height="102" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#0C1114">
+                    <tspan x="104.933465" y="31.5165563">Object Storage</tspan>
+                </text>
+                <g id="tiles/color5/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L351,0 L351,49.9977375 C351,52.7604108 348.758583,55 346.00449,55 L4.99551024,55 C2.23656611,55 0,52.758636 0,49.9977375 L0,0 Z" id="Rectangle-7" fill="#7CB3D0"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#1B2A32">
+                        <tspan x="123.254651" y="32.9840605">Applications</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="tiles/color5" transform="translate(405.000000, 0.000000)">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#486878" x="0.491735537" y="0.5" width="226" height="102" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#0C1114">
+                    <tspan x="46.1645201" y="31.5165563">Block Storage</tspan>
+                </text>
+                <g id="tiles/color5/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L225,0 L225,49.9977375 C225,52.7604108 222.75488,55 219.998424,55 L5.00157638,55 C2.23928202,55 0,52.758636 0,49.9977375 L0,0 Z" id="Rectangle-7" fill="#7CB3D0"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#1B2A32">
+                        <tspan x="70.4297486" y="32.9840605">VM / Host</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="tiles/color5" transform="translate(684.000000, 0.000000)">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#486878" x="0.491735537" y="0.5" width="226" height="102" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#0C1114">
+                    <tspan x="57.2977721" y="31.5165563">File System</tspan>
+                </text>
+                <g id="tiles/color5/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L225,0 L225,49.9977375 C225,52.7604108 222.75488,55 219.998424,55 L5.00157638,55 C2.23928202,55 0,52.758636 0,49.9977375 L0,0 Z" id="Rectangle-7" fill="#7CB3D0"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#1B2A32">
+                        <tspan x="88.0008424" y="32.9840605">Client</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="tiles/color3" transform="translate(0.000000, 329.000000)">
+                <rect id="Rectangle-7" stroke="#EA8434" fill="#743E14" x="0.491735537" y="0.5" width="910" height="101" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#0F0803">
+                    <tspan x="408.322764" y="31.5165563">LIBRADOS</tspan>
+                </text>
+                <g id="tiles/color3/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L909,0 L909,48.9924762 C909,51.7580552 906.761568,54 903.999225,54 L5.0007747,54 C2.2389231,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#BE6A27"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#42240D">
+                        <tspan x="386.586975" y="32.5025321">RADOS Protocol</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group" transform="translate(494.000000, 127.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(774.000000, 127.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(209.000000, 127.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(209.000000, 291.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(589.000000, 439.500000)">
+                <g transform="translate(1.000000, 17.500000)" id="arrows/3" stroke="#C7E6FF" stroke-width="2">
+                    <g transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+                <g transform="translate(-41.000000, 96.000000)" id="tiles/color2/notitle">
+                    <g transform="translate(65.500000, 24.500000) rotate(-90.000000) translate(-65.500000, -24.500000) ">
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#243D3D">
+                            <tspan x="26.652112" y="30.0948903">Content</tspan>
+                        </text>
+                        <rect id="Rectangle-7" stroke="#8BE5E2" fill="#5FA7A5" x="0.5" y="0.5" width="130" height="48" rx="5"></rect>
+                        <text id="Content-Copy" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#243D3D">
+                            <tspan x="17.3825809" y="30.3546942">MONITOR</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-Copy" transform="translate(655.000000, 438.500000)">
+                <g id="Group" transform="translate(1.000000, 17.500000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(-41.000000, 96.000000)">
+                    <g id="tiles/color2/notitle" transform="translate(65.500000, 24.500000) rotate(-90.000000) translate(-65.500000, -24.500000) ">
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#243D3D">
+                            <tspan x="26.652112" y="30.0948903">Content</tspan>
+                        </text>
+                        <rect id="Rectangle-7" stroke="#8BE5E2" fill="#5FA7A5" x="0.5" y="0.5" width="130" height="48" rx="5"></rect>
+                        <text id="Content-Copy" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#243D3D">
+                            <tspan x="17.3825809" y="30.3546942">MONITOR</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-Copy-2" transform="translate(721.000000, 438.500000)">
+                <g id="Group" transform="translate(1.000000, 17.500000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(-41.000000, 96.000000)">
+                    <g id="tiles/color2/notitle" transform="translate(65.500000, 24.500000) rotate(-90.000000) translate(-65.500000, -24.500000) ">
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#243D3D">
+                            <tspan x="26.652112" y="30.0948903">Content</tspan>
+                        </text>
+                        <rect id="Rectangle-7" stroke="#8BE5E2" fill="#5FA7A5" x="0.5" y="0.5" width="130" height="48" rx="5"></rect>
+                        <text id="Content-Copy" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#243D3D">
+                            <tspan x="17.3825809" y="30.3546942">MONITOR</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-Copy-3" transform="translate(787.000000, 438.500000)">
+                <g id="Group" transform="translate(1.000000, 17.500000)" stroke="#C7E6FF" stroke-width="2">
+                    <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                        <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                        <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                        <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(-41.000000, 96.000000)">
+                    <g id="tiles/color2/notitle" transform="translate(65.500000, 24.500000) rotate(-90.000000) translate(-65.500000, -24.500000) ">
+                        <text id="Content" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#243D3D">
+                            <tspan x="26.652112" y="30.0948903">Content</tspan>
+                        </text>
+                        <rect id="Rectangle-7" stroke="#8BE5E2" fill="#5FA7A5" x="0.5" y="0.5" width="130" height="48" rx="5"></rect>
+                        <text id="Content-Copy" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#243D3D">
+                            <tspan x="17.3825809" y="30.3546942">MONITOR</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(495.000000, 291.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(774.000000, 291.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.000000, 6.500000) rotate(-270.000000) translate(-24.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="46.8838384" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="44.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(-52.500000, 209.500000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(106.500000, 6.500000) rotate(-270.000000) translate(-106.500000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="211.467172" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="209.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
