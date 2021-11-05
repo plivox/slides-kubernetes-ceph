@@ -39,7 +39,7 @@
               pour sa <a href="https://ceph.io/en/news/publications/">thèse de doctorat</a>
             </li>
             <li>Inktank Storage</li>
-            <li>2014: Red Hat rachète Inktank</li>
+            <li>2014: rachat de Inktank par RedHat</li>
           </ul>
           <aside class="notes">
             Inktank Storage fournir des services et du support professionnel à
@@ -129,7 +129,7 @@
         <section>
           <h2>Placement Group (PG)</h2>
           <ul>
-            <li>Ils sont composés d'un groupe de daemons OSD</li>
+            <li>Composé d'un groupe <br />d'Object Storage Device (OSD)</li>
             <li>Monitorer le placement d’objets</li>
           </ul>
           <aside class="notes">
@@ -163,19 +163,27 @@
         </section>
 
         <section>
-          <h2>Haute Disponibilité (Monitor)</h2>
+          <h2>Haute Disponibilité (Mon)</h2>
           <ul>
-            <li>Monitor, OSD, PG, CRUSH et MDS Map</li>
+            <li>Cluster Map:</li>
+            <ul>
+              <li>Monitor</li>
+              <li>Clients et Object Storage Device<br />(CRUSH map)</li>
+              <li>Placement Group (PG)</li>
+              <li>MDS Map (CephFS)</li>
+            </ul>
           </ul>
           <aside class="notes">
+            - CRUSH (Controlled Replication Under Scalable Hashing)
+            <br />
             - Les clients et OSD dépendent de la connaissance de la topologie du cluster
             <br />
             - Celle ci est connue grâce à 5 cartes qui forment la cluster map
             <br />
-            - CRUSH (Controlled Replication Under Scalable Hashing)
-            <br />
             - Les clients Ceph et les démons OSD Ceph utilisent tous deux l'algorithme CRUSH pour calculer efficacement
             les informations sur l'emplacement des objets, au lieu de dépendre d'une table de consultation centrale.
+            <br />
+            - Meta données
           </aside>
         </section>
 
