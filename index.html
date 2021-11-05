@@ -238,6 +238,58 @@
           </aside>
         </section>
 
+        <section>
+          <h2>Exemple</h2>
+          <pre>
+            <code data-trim data-noescape>
+            version: 1
+
+            x-database-root-password: &database-root-password
+              ROOT_PASSWORD=[PASSWORD]
+
+            storages:
+              mariadb:
+                size: 20Go
+                class: SSD
+              minio:
+                size: 200Go
+
+            services:
+              - name: golang:1.17
+                scale: 4
+                protocols:
+                  http:
+                    target: 8080
+                  https:
+                    target: 8080
+                serversNames:
+                  - alias: ['example.com', 'www.example.com']
+                    certificat: example.com
+                env:
+                  - *database-root-password
+                build: |
+                  go mod tidy && go build -o bin/server cmd/server.go
+                run: bin/server --addr 0.0.0.0:8080
+
+              - name: redis:latest
+
+              - name: mariadb:10.6.4
+                storage: mariadb
+                env:
+                  - *database-root-password
+
+              - name: minio:latest
+                storage: minio
+                env:
+                  - MINIO_ROOT_USER=[USER]
+                  - MINIO_ROOT_PASSWORD=[PASSWORD]
+            </code>
+          </pre>
+          <aside class="notes">
+            - Exemple de fichier PaaS
+          </aside>
+        </section>
+
       </section>
     </div>
   </div>
