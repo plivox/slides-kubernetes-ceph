@@ -28,34 +28,18 @@
           data-background-position="100% 100%" data-background-size="100%">
         </section>
 
-        <section data-transition="slide" data-background-color="#0E1320">
-          <h2>Céphalopode?</h2>
-          <ul>
-            <li>Du stockage distribué</li>
-            <li>Fonctionne avec du matériel standard</li>
-            <li>Pas de point de défaillance unique</li>
-            <li>Extensible (Scaling horizontal)</li>
-            <li>Open Source</li>
-          </ul>
-          <aside class="notes">
-            RADOS (Reliable Autonomic Distributed Object Store)
-            <br />
-            Sous licence LGPL
-          </aside>
-        </section>
-
         <section data-transition="slide">
           <h2>Historique de Ceph</h2>
           <ul>
             <li>
-              Initialement créé par Sage Weil
+              Créé par Sage Weil
               <br />
               (co-fondateur de DreamHost)
               <br />
               pour sa <a href="https://ceph.io/en/news/publications/">thèse de doctorat</a>
             </li>
             <li>Inktank Storage</li>
-            <li>En 2014, Red Hat rachète Inktank</li>
+            <li>2014: Red Hat rachète Inktank</li>
           </ul>
           <aside class="notes">
             Inktank Storage fournir des services et du support professionnel à
@@ -63,6 +47,22 @@
             <br />
             Red Hat et SUSE vendent des versions commerciales de Ceph sur
             abonnement.
+          </aside>
+        </section>
+
+        <section data-transition="slide" data-background-color="#0E1320">
+          <h2>Céphalopode?</h2>
+          <ul>
+            <li>Du stockage distribué</li>
+            <li>Fonctionne avec du matériel standard</li>
+            <li>Pas de point de défaillance unique</li>
+            <li>Extensible (Scaling horizontal)</li>
+            <li>Open Source (LGPL)</li>
+          </ul>
+          <aside class="notes">
+            RADOS (Reliable Autonomic Distributed Object Store)
+            <br />
+            Sous licence LGPL
           </aside>
         </section>
 
@@ -74,7 +74,7 @@
                 DigitalOcean
               </a>
             </li>
-            <li>OVH (Cloud Disk Array)</li>
+            <li>OVH</li>
             <li>Le CERN (+ de 200 serveurs)</li>
           </ul>
           <aside class="notes"></aside>
@@ -84,6 +84,10 @@
           <h2>Architecture de Ceph</h2>
           <img src="images/schema-ceph.svg" style="width: 80%;">
           <aside class="notes">
+            - OVH (Cloud Disk Array)
+            <br />
+            - RADOS (Reliable Autonomic Distributed Object Store)
+            <br />
             - OSDs daemons
             <br />
             - Monitor daemons
@@ -167,6 +171,21 @@
         </section>
 
         <section>
+          <h2>Cas d'utilisation réel</h2>
+          <ul>
+            <li>Cluster Ceph et Kubernetes <br />d'une quinzaine de machines</li>
+            <li>Utilisation de Rados Block Device (RBD)</li>
+            <li>Deux réseaux physiques 10 Gb/s</li>
+            <li>Une Plateforme PaaS pour nos clients</li>
+          </ul>
+          <aside class="notes">
+            - Utilisation de RBD
+            <br />
+            - Open vSwitch
+          </aside>
+        </section>
+
+        <section>
           <h2>Stockage et Kubernetes</h2>
           <ul>
             <li>Pourquoi Ceph ?</li>
@@ -181,7 +200,7 @@
             </li>
           </ul>
           <aside class="notes">
-            - Pourquoi Ceph et pas Longhorn ? ()
+            - Pourquoi Ceph et pas du stockage Longhorn ? (VM, S3)
             <br />
             - Container Storage Interface (CSI)
             <br />
@@ -231,18 +250,7 @@
         </section>
 
         <section>
-          <h2>Cas d'utilisation réel</h2>
-          <ul>
-            <li>Cluster Ceph et Kubernetes <br />d'une quinzaine de machines</li>
-            <li>Deux réseaux physiques 10 Gb/s</li>
-            <li>Une Plateforme PaaS pour nos clients</li>
-          </ul>
-          <aside class="notes">
-          </aside>
-        </section>
-
-        <section>
-          <h2>Exemple</h2>
+          <h2>Exemple PaaS</h2>
           <pre>
             <code data-trim data-noescape>
             version: 1
@@ -254,8 +262,6 @@
               mariadb:
                 size: 20Go
                 class: SSD
-              minio:
-                size: 200Go
 
             services:
               - name: golang:1.17
@@ -280,12 +286,6 @@
                 storage: mariadb
                 env:
                   - *database-root-password
-
-              - name: minio:latest
-                storage: minio
-                env:
-                  - MINIO_ROOT_USER=[USER]
-                  - MINIO_ROOT_PASSWORD=[PASSWORD]
             </code>
           </pre>
           <aside class="notes">
@@ -294,14 +294,30 @@
         </section>
 
         <section>
-          <h2>Questions</h2>
+          <h2>Retour d'expérience</h2>
           <ul>
-            <li>Performance</li>
-            <li>Amélioration</li>
+            <li>
+              Performances:
+              <ul>
+                <li>A propos du matériel ?</li>
+                <li>Ceph vs RAID ?</li>
+              </ul>
+            </li>
+            <li>
+              Améliorations:
+              <ul>
+                <li>Uniformisation</li>
+                <li>Facilité de déploiement</li>
+              </ul>
+            </li>
           </ul>
           <aside class="notes">
             - Amélioration par exemple: Rook
           </aside>
+        </section>
+
+        <section>
+          <h2>Questions</h2>
         </section>
 
       </section>
