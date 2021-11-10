@@ -28,19 +28,13 @@
           data-background-position="100% 100%" data-background-size="100%">
         </section>
 
-        <section data-transition="slide">
-          <h2>Historique de Ceph</h2>
-          <ul>
-            <li>
-              Créé par Sage Weil
-              <br />
-              (co-fondateur de DreamHost)
-              <br />
-              pour sa <a href="https://ceph.io/en/news/publications/">thèse de doctorat</a>
-            </li>
-            <li>Inktank Storage</li>
-            <li>2014: rachat de Inktank par RedHat</li>
-          </ul>
+        <section data-markdown data-transition="slide">
+          <textarea data-template>
+            ## Historique de Ceph
+            * Créé par Sage Weil <br /> (co-fondateur de DreamHost) <br /> pour sa [thèse de doctorat](https://ceph.io/en/news/publications/)
+            * Inktank Storage
+            * 2014: rachat de Inktank par RedHat
+          </textarea>
           <aside class="notes">
             Inktank Storage fournir des services et du support professionnel à
             Ceph.
@@ -50,15 +44,15 @@
           </aside>
         </section>
 
-        <section data-transition="slide" data-background-color="#0E1320">
-          <h2>Céphalopode?</h2>
-          <ul>
-            <li>Du stockage distribué</li>
-            <li>Fonctionne avec du matériel standard</li>
-            <li>Pas de point de défaillance unique</li>
-            <li>Extensible (Scaling horizontal)</li>
-            <li>Open Source (LGPL)</li>
-          </ul>
+        <section data-markdown data-transition="slide" data-background-color="#0E1320">
+          <textarea data-template>
+            ## Céphalopode?
+            * Du stockage distribué
+            * Fonctionne avec du matériel standard
+            * Pas de point de défaillance unique
+            * Extensible (Scaling horizontal)
+            * Open Source (LGPL)
+          </textarea>
           <aside class="notes">
             RADOS (Reliable Autonomic Distributed Object Store)
             <br />
@@ -66,27 +60,13 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Qui utilise Ceph?</h2>
-          <ul>
-            <li>
-              <a href="https://www.digitalocean.com/blog/why-we-chose-ceph-to-build-block-storage/">
-                DigitalOcean
-              </a>
-            </li>
-            <li>
-              <a href="https://www.ovh.com/fr/cloud-disk-array/">
-                OVH
-              </a>
-            </li>
-            <li>
-              Le CERN
-              <a href="https://ceph.io/en/news/blog/2017/new-luminous-scalability/">
-                (+ de 200 serveurs)
-              </a>
-            </li>
-          </ul>
-          <aside class="notes"></aside>
+        <section data-markdown>
+          <textarea data-template>
+            ## Qui utilise Ceph?
+            * [DigitalOcean](https://www.digitalocean.com/blog/why-we-chose-ceph-to-build-block-storage/)
+            * [OVH](https://www.ovh.com/fr/cloud-disk-array/)
+            * [Le CERN (+ de 200 serveurs)](https://ceph.io/en/news/blog/2017/new-luminous-scalability/)
+          </textarea>
         </section>
 
         <section>
@@ -107,12 +87,12 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Object Storage Device (OSD)</h2>
-          <ul>
-            <li>Stockage des données sous <br />forme d'objets</li>
-            <li>Backend BlueStore (FileSystem)</li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Object Storage Device (OSD)
+            * Stockage des données sous <br />forme d'objets
+            * Backend BlueStore (FileSystem)
+          </textarea>
           <aside class="notes">
             - Les clients CEPH communiquent directement avec les OSD plutôt que par l'intermédiaire d'un serveur
             centralisé
@@ -126,12 +106,12 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Placement Group (PG)</h2>
-          <ul>
-            <li>Composé d'un groupe <br />d'Object Storage Device (OSD)</li>
-            <li>Monitorer le placement d’objets</li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Placement Group (PG)
+            * Composé d'un groupe <br />d'Object Storage Device (OSD)
+            * Monitorer le placement d’objets
+          </textarea>
           <aside class="notes">
             – Monitorer le placement d’objets et leurs métadonnées
             <br />
@@ -144,13 +124,13 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Logical partitions (Pools)</h2>
-          <ul>
-            <li>Partitions logiques pour <br />le stockage des objets</li>
-            <li>Nombre de réplicas</li>
-            <li>Types de disques</li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Logical partitions (Pools)
+            * Partitions logiques pour <br />le stockage des objets
+            * Nombre de réplicas
+            * Types de disques
+          </textarea>
           <aside class="notes">
             - Les pools sont des partitions logiques pour le stockage des objets.
             <br />
@@ -162,17 +142,15 @@
           <img src="images/pool.svg" style="width: 80%;">
         </section>
 
-        <section>
-          <h2>Haute Disponibilité (Mon)</h2>
-          <ul>
-            <li>Cluster Map:</li>
-            <ul>
-              <li>Monitor</li>
-              <li>Clients et Object Storage Device<br />(CRUSH map)</li>
-              <li>Placement Group (PG)</li>
-              <li>MDS Map (CephFS)</li>
-            </ul>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Haute Disponibilité (Mon)
+            * Cluster Map:
+              * Monitor
+              * Clients et Object Storage Device<br />(CRUSH map)
+              * Placement Group (PG)
+              * MDS Map (CephFS)
+          </textarea>
           <aside class="notes">
             - CRUSH (Controlled Replication Under Scalable Hashing)
             <br />
@@ -187,14 +165,14 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Cas d'utilisation réel</h2>
-          <ul>
-            <li>Cluster Ceph et Kubernetes</li>
-            <li>Utilisation de Rados Block Device (RBD)</li>
-            <li>Deux réseaux physiques 10 Gb/s</li>
-            <li>Une Plateforme PaaS pour nos clients</li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Cas d'utilisation réel
+            * Cluster Ceph et Kubernetes
+            * Utilisation de Rados Block Device (RBD)
+            * Deux réseaux physiques 10 Gb/s
+            * Une Plateforme PaaS pour nos clients
+          </textarea>
           <aside class="notes">
             - Utilisation de RBD
             <br />
@@ -202,20 +180,14 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Stockage et Kubernetes</h2>
-          <ul>
-            <li>Pourquoi Ceph ?</li>
-            <li>
-              <a href="https://github.com/ceph/ceph-csi">
-                CSI Ceph Driver
-              </a>
-              <ul>
-                <li>Provisionnement dynamique (PVC)</li>
-                <li>Supporte RBD et CephFS</li>
-              </ul>
-            </li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Stockage et Kubernetes
+            * Pourquoi Ceph ?
+            * [CSI Ceph Driver](https://github.com/ceph/ceph-csi)
+              * Provisionnement dynamique (PVC)
+              * Supporte RBD et CephFS
+          </textarea>
           <aside class="notes">
             - Pourquoi Ceph et pas du stockage Longhorn ? (VM, S3)
             <br />
@@ -310,37 +282,30 @@
           </aside>
         </section>
 
-        <section>
-          <h2>Retour d'expérience</h2>
-          <ul>
-            <li>
-              Performances:
-              <ul>
-                <li>A propos du matériel ?</li>
-                <li>Ceph vs RAID ?</li>
-              </ul>
-            </li>
-            <li>
-              Améliorations:
-              <ul>
-                <li>Uniformisation</li>
-                <li>Facilité de déploiement</li>
-              </ul>
-            </li>
-          </ul>
+        <section data-markdown>
+          <textarea data-template>
+            ## Retour d'expérience
+            * Performances:
+              * A propos du matériel ?
+              * Ceph vs RAID ?
+            * Améliorations:
+              * Uniformisation
+              * Facilité de déploiement
+          </textarea>
           <aside class="notes">
             - Amélioration par exemple: Rook
           </aside>
         </section>
 
-        <section>
-          <h2>Questions</h2>
+        <section data-markdown>
+          <textarea data-template>
+            ## Vos Questions
+          </textarea>
         </section>
 
       </section>
     </div>
   </div>
-
   <script src="dist/reveal.js"></script>
   <script src="plugin/notes/notes.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
