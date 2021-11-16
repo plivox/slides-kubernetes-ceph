@@ -1,62 +1,57 @@
 {
   "name": "slides-kubernetes-ceph",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Presentation of Kubernetes with Ceph",
   "homepage": "https://plivox.github.io/slides-kubernetes-ceph",
-  "scripts": {
-    "test": "gulp test",
-    "start": "gulp serve",
-    "build": "gulp build"
-  },
   "author": {
     "name": "Vincent Lauria",
     "email": "vincent@lauria.ch",
-    "web": "https://plivox.github.io"
+    "web": "https://github.com/plivox"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/plivox/slides-kubernetes-ceph"
-  },
-  "engines": {
-    "node": ">=10.0.0"
+    "url": "https://github.com/plivox/slides-kubernetes-ceph"
   },
   "keywords": [
     "kubernetes",
     "ceph"
   ],
+  "scripts": {
+    "start": "npx rimraf .parcel-dist && npx parcel serve --dist-dir .parcel-dist",
+    "build": "npx rimraf public && npx parcel build"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "targets": {
+    "default": {
+      "source": "src/index.html",
+      "distDir": "./public",
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    }
+  },
+  "parcel-namer-custom": {
+    "images/background.svg": "images/background.svg"
+  },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/eslint-parser": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "babel-plugin-transform-html-import-to-string": "0.0.1",
+    "@parcel/config-default": "^2.0.1",
+    "@parcel/core": "^2.0.1",
+    "@parcel/optimizer-data-url": "^2.0.1",
+    "@parcel/transformer-inline-string": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
     "colors": "^1.4.0",
-    "core-js": "^3.12.1",
-    "fitty": "^2.3.0",
-    "glob": "^7.1.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-connect": "^5.7.0",
-    "gulp-eslint": "^6.0.0",
-    "gulp-header": "^2.0.9",
-    "gulp-nunjucks-render": "^2.2.3",
-    "gulp-tap": "^2.0.0",
-    "gulp-zip": "^4.2.0",
+    "eslint": "^8.2.0",
+    "fitty": "^2.3.5",
     "highlight.js": "^10.0.3",
     "marked": "^2.0.3",
-    "node-qunit-puppeteer": "^2.1.0",
-    "node-static": "^0.7.11",
-    "qunit": "^2.17.2",
-    "reveal-multiplex": "^0.1.0",
-    "rollup": "^2.48.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.39.2",
-    "yargs": "^15.1.0"
+    "parcel": "^2.0.1",
+    "parcel-namer-custom": "^0.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.43.4",
+    "socket.io-client": "^4.3.2"
   },
-  "browserslist": "> 0.5%, IE 11, not dead",
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -94,5 +89,11 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "fastify": "^3.24.0",
+    "fastify-socket.io": "^2.0.1",
+    "fastify-static": "^4.5.0",
+    "socket.io": "^4.3.2"
   }
 }

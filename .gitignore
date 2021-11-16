@@ -1,4 +1,6 @@
 .DS_Store
-node_modules/
-.sass-cache
+.parcel-cache
+.parcel-dist
+node_modules
 resources
+.env
