@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  font-family: "Roboto", serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(224, 39%, 19%);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+div.title {
+  z-index: 10;
+  display: block;
+  position: absolute !important;
+  background: url(../images/title.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: scale(0);
+  transition: all 0.8s;
+  top: -50%;
+  left: 3%;
+  width: 35%;
+  height: 35%;
+
+  &.in {
+    transform: scale(1);
+    top: 7%;
+  }
+}
+
+@import "reveal";
+@import "theme/source/black.scss";
+@import "../plugin/highlight/themes/atelier-heath.css";

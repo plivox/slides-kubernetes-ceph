@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="866px" height="570px" viewBox="0 0 866 570" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>schema-kubernetes-ceph</title>
+    <g id="Schemas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background-Copy" fill="#0E1320" x="-325" y="-126" width="1499" height="963"></rect>
+        <g id="Group-4" transform="translate(0.491736, 0.500000)">
+            <g id="tiles/blue" transform="translate(463.508264, 466.500000)">
+                <rect id="Rectangle-7" stroke="#29AFFF" fill="#115984" x="0.491735537" y="0.5" width="335" height="101" rx="5"></rect>
+                <g id="Content" transform="translate(-0.008264, 46.900662)">
+                    <path d="M0,0 L334,0 L334,48.9924762 C334,51.7580552 331.756495,54 329.002921,54 L4.99707933,54 C2.23726862,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#1978B1"></path>
+                    <text fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#0A273E">
+                        <tspan x="93.6904907" y="32.5025321">Module RBD/NDB</tspan>
+                    </text>
+                </g>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#031522">
+                    <tspan x="135.311232" y="31.5165563">Kernel</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-7" stroke="#C1E3F5" x="0.5" y="0.5" width="351" height="185" rx="5"></rect>
+            <text id="Tilte" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#ADCCDD">
+                <tspan x="157.151056" y="37.5165563">POD</tspan>
+            </text>
+            <rect id="Rectangle-7" stroke="#C1E3F5" x="405.5" y="0.5" width="458" height="185" rx="5"></rect>
+            <text id="Tilte" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Bold, Roboto Mono for Powerline" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#ADCCDD">
+                <tspan x="615.651056" y="37.5165563">POD</tspan>
+            </text>
+            <g id="tiles/color3" transform="translate(51.508264, 467.000000)">
+                <rect id="Rectangle-7" stroke="#EA8434" fill="#743E14" x="0.491735537" y="0.5" width="335" height="101" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#0F0803">
+                    <tspan x="118.446731" y="31.5165563">LIBRADOS</tspan>
+                </text>
+                <g id="tiles/color3/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L334,0 L334,48.9924762 C334,51.7580552 331.756495,54 329.002921,54 L4.99707933,54 C2.23726862,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#BE6A27"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#42240D">
+                        <tspan x="99.0869751" y="32.5025321">RADOS Protocol</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group" transform="translate(490.508264, 249.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(39.000000, 6.500000) rotate(-270.000000) translate(-39.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="76.8080808" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="74.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(129.508264, 249.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(39.000000, 6.500000) rotate(-270.000000) translate(-39.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="76.8080808" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="74.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(694.508264, 249.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(39.000000, 6.500000) rotate(-270.000000) translate(-39.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="76.8080808" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="74.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(607.008264, 428.500000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(24.500000, 6.500000) rotate(-270.000000) translate(-24.500000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="47.8813131" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="45.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="Group" transform="translate(394.508264, 511.000000)" stroke="#C7E6FF" stroke-width="2">
+                <g id="arrows/3" transform="translate(31.000000, 6.500000) rotate(-180.000000) translate(-31.000000, -6.500000) ">
+                    <line x1="1" y1="6.5" x2="60.8484848" y2="6.5" id="Line" stroke-linecap="square"></line>
+                    <circle id="Oval-R" fill="#C7E6FF" cx="58.5" cy="6.5" r="2.5"></circle>
+                    <circle id="Oval-L" fill="#C7E6FF" cx="3.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+            <g id="tiles/color2" transform="translate(1.508264, 301.500000)">
+                <rect id="Rectangle-7" stroke="#8BE5E2" fill="#386362" x="0.491735537" y="0.5" width="863" height="101" rx="5"></rect>
+                <text id="Tilte" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#121F1E">
+                    <tspan x="376.97829" y="31.5165563">Kubernetes</tspan>
+                </text>
+                <g id="tiles/color2/content" transform="translate(1.000000, 47.000000)">
+                    <path d="M0,0 L862,0 L862,48.9924762 C862,51.7580552 859.769579,54 856.991834,54 L5.00816604,54 C2.24223231,54 0,51.7654791 0,48.9924762 L0,0 Z" id="Rectangle-7" fill="#5FA7A5"></path>
+                    <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing="0.300000046" fill="#243D3D">
+                        <tspan x="365.217737" y="32.5025321">Ceph CSI Driver</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(432.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="22.3729128" y="44.7138034">APP</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(26.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="22.3729128" y="44.7138034">APP</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(642.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="22.3729128" y="44.7138034">APP</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(236.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="22.3729128" y="44.7138034">APP</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(537.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="17.583655" y="44.7138034">VREF</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(131.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="17.583655" y="44.7138034">VREF</tspan>
+                </text>
+            </g>
+            <g id="tiles/color4/notitle-copy-3" transform="translate(747.508264, 71.500000)">
+                <rect id="Rectangle-7" stroke="#F4E8F0" fill="#CABDC6" x="0.5" y="0.5" width="87" height="75" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.350000054" fill="#413C40">
+                    <tspan x="17.583655" y="44.7138034">VREF</tspan>
+                </text>
+            </g>
+            <g id="tiles/color5/notitle-copy" transform="translate(433.508264, 162.500000)">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#7CB3D0" x="0.5" y="0.5" width="191" height="45" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#1B2A32">
+                    <tspan x="28.4448367" y="29.8267757">Volume Claim</tspan>
+                </text>
+            </g>
+            <g id="tiles/color5/notitle-copy-2" transform="translate(27.508264, 162.500000)">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#7CB3D0" x="0.5" y="0.5" width="296" height="45" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#1B2A32">
+                    <tspan x="80.9448367" y="29.8267757">Volume Claim</tspan>
+                </text>
+            </g>
+            <g id="tiles/color5/notitle-copy" transform="translate(643.508264, 162.500000)">
+                <rect id="Rectangle-7" stroke="#C1E3F5" fill="#7CB3D0" x="0.5" y="0.5" width="191" height="45" rx="5"></rect>
+                <text id="Content" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="21" font-weight="bold" letter-spacing="0.3" fill="#1B2A32">
+                    <tspan x="28.4448367" y="29.8267757">Volume Claim</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

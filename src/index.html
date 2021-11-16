@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Presentation Kubernetes & Ceph</title>
+  <link rel="stylesheet" href="css/app.scss" />
+  <link rel="icon" href="images/favicon.ico" />
+  <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div id="title" class="title"></div>
+    <div class="slides">
+      <section data-background-color="#0E1320">
+
+        <section class="intro" data-background-color="#afdfe3" data-transition="slide"
+          data-background-image="images/background.svg" data-background-repeat="no-repeat"
+          data-background-position="100% 100%" data-background-size="100%">
+          <img src="images/background.svg" alt="logo" style="display: none;" />
+        </section>
+
+        <section data-markdown data-transition="slide">
+          <textarea data-template>
+            ## Historique de Ceph
+            * Créé par Sage Weil <br /> (co-fondateur de DreamHost) <br /> pour sa [thèse de doctorat](https://ceph.io/en/news/publications/)
+            * Inktank Storage
+            * 2014: rachat de Inktank par RedHat
+          </textarea>
+          <aside class="notes">
+            Inktank Storage fournir des services et du support professionnel à
+            Ceph.
+            <br />
+            Red Hat et SUSE vendent des versions commerciales de Ceph sur
+            abonnement.
+          </aside>
+        </section>
+
+        <section data-markdown data-transition="slide" data-background-color="#0E1320">
+          <textarea data-template>
+            ## Céphalopode?
+            * Du stockage distribué
+            * Fonctionne avec du matériel standard
+            * Pas de point de défaillance unique
+            * Extensible (Scaling horizontal)
+            * Open Source (LGPL)
+          </textarea>
+          <aside class="notes">
+            RADOS (Reliable Autonomic Distributed Object Store)
+            <br />
+            Sous licence LGPL
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Qui utilise Ceph?
+            * [DigitalOcean](https://www.digitalocean.com/blog/why-we-chose-ceph-to-build-block-storage/)
+            * [OVH](https://www.ovh.com/fr/cloud-disk-array/)
+            * [Le CERN (+ de 200 serveurs)](https://ceph.io/en/news/blog/2017/new-luminous-scalability/)
+          </textarea>
+        </section>
+
+        <section>
+          <h2>Architecture de Ceph</h2>
+          <img src="images/schema-ceph.svg" style="width: 80%;">
+          <aside class="notes">
+            - OVH (Cloud Disk Array)
+            <br />
+            - RADOS (Reliable Autonomic Distributed Object Store)
+            <br />
+            - OSDs daemons
+            <br />
+            - Monitor daemons
+            <br />
+            - Placement Group (PGs)
+            <br />
+            - Pools
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Object Storage Device (OSD)
+            * Stockage des données sous <br />forme d'objets
+            * Backend BlueStore (FileSystem)
+          </textarea>
+          <aside class="notes">
+            - Les clients CEPH communiquent directement avec les OSD plutôt que par l'intermédiaire d'un serveur
+            centralisé
+            <br />
+            - Différents backend de stockage : – FileStore, BlueStore, MemStore
+            <br />
+            - Gain en vitesse écriture X2 sur les disques SATA et plus sur les SSD
+            <br />
+            - Activation de la compression : lz4, snappy, zlib
+            <br />
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Placement Group (PG)
+            * Composé d'un groupe <br />d'Object Storage Device (OSD)
+            * Monitorer le placement d’objets
+          </textarea>
+          <aside class="notes">
+            – Monitorer le placement d’objets et leurs métadonnées
+            <br />
+            - Vérifier l’interconnexion entre ces OSD (~30s)
+            <br />
+            - La gestion du placement est cher en CPU et en RAM
+            <br />
+            - Irréaliste sans PG lorsque l’on a des millions, voire milliards d’objets
+            <br />
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Logical partitions (Pools)
+            * Partitions logiques pour <br />le stockage des objets
+            * Nombre de réplicas
+            * Types de disques
+          </textarea>
+          <aside class="notes">
+            - Les pools sont des partitions logiques pour le stockage des objets.
+            <br />
+            - Types de disques NVMe, SSD, HDD
+          </aside>
+        </section>
+
+        <section>
+          <img src="images/pool.svg" style="width: 80%;">
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Haute Disponibilité (Mon)
+            * Cluster Map:
+              * Monitor
+              * Clients et Object Storage Device<br />(CRUSH map)
+              * Placement Group (PG)
+              * MDS Map (CephFS)
+          </textarea>
+          <aside class="notes">
+            - CRUSH (Controlled Replication Under Scalable Hashing)
+            <br />
+            - Les clients et OSD dépendent de la connaissance de la topologie du cluster
+            <br />
+            - Celle ci est connue grâce à 5 cartes qui forment la cluster map
+            <br />
+            - Les clients Ceph et les démons OSD Ceph utilisent tous deux l'algorithme CRUSH pour calculer efficacement
+            les informations sur l'emplacement des objets, au lieu de dépendre d'une table de consultation centrale.
+            <br />
+            - Meta données
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Cas d'utilisation réel
+            * Cluster Ceph et Kubernetes
+            * Utilisation de Rados Block Device (RBD)
+            * Deux réseaux physiques 10 Gb/s
+            * Une Plateforme PaaS pour nos clients
+          </textarea>
+          <aside class="notes">
+            - Utilisation de RBD
+            <br />
+            - Open vSwitch
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Stockage et Kubernetes
+            * Pourquoi Ceph ?
+            * [CSI Ceph Driver](https://github.com/ceph/ceph-csi)
+              * Provisionnement dynamique (PVC)
+              * Supporte RBD et CephFS
+          </textarea>
+          <aside class="notes">
+            - Pourquoi Ceph et pas du stockage Longhorn ? (VM, S3)
+            <br />
+            - Container Storage Interface (CSI)
+            <br />
+            - Provisionnement dynamique
+            <br />
+            - PersistentVolume (PV) et PersistentVolumeClaim (PVC)
+          </aside>
+        </section>
+
+        <section>
+          <h2>Kubernetes et Ceph</h2>
+          <img src="images/schema-kubernetes-ceph.svg" style="width: 80%;">
+          <aside class="notes">
+            - Des fonctions de stockage telles que attacher, resizer, driver-registrar et snapshotter
+            <br />
+            - Le stockage comme une ressource dans Kubernetes
+            <br />
+          </aside>
+        </section>
+
+        <section>
+          <h2>Exemple</h2>
+          <pre>
+            <code data-trim data-noescape>
+            ---
+            apiVersion: v1
+            kind: Pod
+            metadata:
+              name: extraordinary-app
+            spec:
+              containers:
+                - name: web-server
+                  image: docker.io/library/nginx:latest
+                  volumeMounts:
+                    - name: mypvc
+                      mountPath: /var/lib/www
+              volumes:
+                - name: mypvc
+                  persistentVolumeClaim:
+                    claimName: csi-cephfs-pvc
+                    readOnly: false
+            </code>
+          </pre>
+          <aside class="notes">
+            - Exemple d'utilisation de CephFS dans un PersistentVolumeClaim
+          </aside>
+        </section>
+
+        <section>
+          <h2>Exemple PaaS</h2>
+          <pre>
+            <code data-trim data-noescape>
+            version: 1
+
+            x-database-root-password: &database-root-password
+              ROOT_PASSWORD=[PASSWORD]
+
+            storages:
+              mariadb:
+                size: 20Go
+                class: SSD
+
+            services:
+              - name: golang:1.17
+                scale: 4
+                protocols:
+                  http:
+                    target: 8080
+                  https:
+                    target: 8080
+                serversNames:
+                  - alias: ['example.com', 'www.example.com']
+                    certificat: example.com
+                env:
+                  - *database-root-password
+                build: |
+                  go mod tidy && go build -o bin/server cmd/server.go
+                run: bin/server --addr 0.0.0.0:8080
+
+              - name: redis:latest
+
+              - name: mariadb:10.6.4
+                storage: mariadb
+                env:
+                  - *database-root-password
+            </code>
+          </pre>
+          <aside class="notes">
+            - Exemple de fichier PaaS
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Retour d'expérience
+            * Performances:
+              * A propos du matériel ?
+              * Ceph vs RAID ?
+            * Améliorations:
+              * Uniformisation
+              * Facilité de déploiement
+          </textarea>
+          <aside class="notes">
+            - Amélioration par exemple: Rook
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Vos Questions
+          </textarea>
+        </section>
+
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
