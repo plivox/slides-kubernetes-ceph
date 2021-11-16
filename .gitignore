@@ -1,6 +1,7 @@
 .DS_Store
 .parcel-cache
 .parcel-dist
+.vercel
 node_modules
 resources
 .env
