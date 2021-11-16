@@ -21,7 +21,7 @@
     "build": "npx rimraf public && npx parcel build"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 14"
   },
   "targets": {
     "default": {
